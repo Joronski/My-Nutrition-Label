@@ -17,14 +17,16 @@ body {
   padding: 0 7px;
 }
 
-h1 {
+header h1 {
   text-align: center;
-  margin: -4px 0 -4px 0;
+  margin: -4px 0;
   letter-spacing: 0.15px;
 }
 
 p {
   margin: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .divider {
@@ -34,4 +36,55 @@ p {
 
 .bold {
   font-weight: 800;
+}
+
+.large {
+  height: 10px;
+}
+
+.large, .medium {
+  background-color: #000;
+  border: 0;
+}
+
+.medium {
+  height: 5px;
+}
+
+.small-text {
+  font-size: 0.85rem;
+}
+
+.calories-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.calories-info h2 {
+  margin: 0;
+}
+
+.left-container p {
+  margin: -5px -2px -5px -2px;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.calories-info span {
+  font-size: 2.4em;
+  font-weight: 700;
+  margin: -7px -2px;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+.indent {
+  margin-left: 1em;
+}
+
+.daily-value p:not(.no-divider) {
+  border-bottom: 1px solid #888989;
 }
